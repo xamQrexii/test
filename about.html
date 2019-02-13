@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input 
+    type="color" 
+    name="my-custom-color" 
+    id="my-custom-color"
+    onchange="document.body.style.backgroundColor = this.value;"
+    >
+
+
+    <script>
+        function changeColor(ev) {
+            document.body.style.backgroundColor = ev.value;
+        }
+        function para(){
+            var el = document.getElementById('abc')
+            var para = el.getElementsByTagName('p');
+
+           for(var i=0; i < para.length; i++){
+               para[i].style.color = "red"
+           }
+
+            console.log(para);
+            
+        }
+    </script>
+</body>
+</html>

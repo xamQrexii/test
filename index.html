@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <style>
+    .changeColor{color:pink;}
+    .font{
+        font-size: 32px;
+    }
+    </style> -->
+</head>
+<body>
+    <!-- <img src="1.png" width="200" id="img" onMouseover="swapPic(id , 'download.jpeg')" onMouseout="swap(id , '1.png')"> -->
+    <button onClick="link()">Click me</button>
+    <a id="link" class="changeColor">About</a>
+    <p id="para">Hi I am first Paragraph</p>
+    <p id="para">Hi I am  Paragraph</p>
+    <p id="para">Hi I am Paragraph</p>
+
+    <!-- <h1 class="h1">This is H1</h1>
+    <h1 class="h1">This is another H1</h1> -->
+    <script>
+        function link(){
+            var para = document.getElementById('para')
+            para.style.color = "red"
+            para.style.fontSize = '60px'
+            para.style = 'background-color:navy'
+        }
+        // function swapPic(id , imgPath){
+        //     document.getElementById(id).src = imgPath
+        // }
+        // function swap(id , imgPath){
+        //     document.getElementById(id).src = imgPath
+        // }
+        // var id = document.getElementsByClassName('h1');
+        // console.log(id);
+        // </script>
+</body>
+</html>
